@@ -125,6 +125,22 @@
     max: 200000,
     temperature: 1
   }
+  const g25flash = {
+    ...chatModelBase,
+    prompt:       0.0000003, // $.3 per 1M input tokens
+    cachedPrompt: 0.00000003, // $0.03 per 1M cached input tokens
+    completion: 0.0000025, // $2.50 per 1M output tokens
+    max: 200000,
+    temperature: 1
+  }
+  const g25pro = {
+    ...chatModelBase,
+    prompt: 0.0000013, // $1.25 per 1M input tokens
+    cachedPrompt: 0.000000125, // $0.125 per 1M cached input tokens
+    completion: 0.0000100, // $10.0 per 1M output tokens
+    max: 200000,
+    temperature: 1
+  }
   const chatgpt4olatest = {
     ...chatModelBase,
     prompt: 0.000005, // $5.00 per 1M input tokens
@@ -150,6 +166,8 @@
     'gpt-4o': { ...gpt4o },
     o3: { ...o3 },
     'o4-mini': { ...o4mini },
+    'models/gemini-2.5-flash': { ...g25flash },
+    'models/gemini-2.5-pro': { ...g25pro },
     'chatgpt-4o-latest': { ...chatgpt4olatest }
   }
 
