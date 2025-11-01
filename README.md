@@ -1,3 +1,7 @@
+# recolic fork
+
+better `build.sh`, add gemini flash/pro pricing
+
 # ChatGPT-web
 
 [![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/Niek/chatgpt-web/pages.yml?style=flat-square)](https://github.com/Niek/chatgpt-web/actions/workflows/pages.yml)
